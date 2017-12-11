@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Console Tricks!</title>
 </head>
+
 <body>
 
   <p onClick="makeGreen()">×BREAK×DOWN×</p>
@@ -18,29 +20,40 @@
     }
 
     // Regular
-
+    console.log('hello')
     // Interpolated
-
+    const p = document.querySelector('p')
     // Styled
-
+    // console.log('%c I am some great text', 'font-size:100px;')
     // warning!
-
+    console.warn('oh no')
     // Error :|
-
+    console.error('shit');
     // Info
-
+    console.info('crocodiles eat many people per year');
     // Testing
-
+    console.assert(1 === 2, 'that is wrong')
     // clearing
-
+    console.clear();
     // Viewing DOM Elements
-
+    console.dir(p);
     // Grouping together
-
+    dogs.forEach(dog => console.log(`This is ${dog.name}`))
+    console.table(dogs);
+    //there is also console.group and console.collapsed;
     // counting
-
+    console.count('Wes')
+    console.count('Wes')
+    console.count('Wes')
+    console.count('Wes')
+    console.count('Wes')
+    console.count('Wes')
+    console.count('Wes')
+    console.count('Wes')
     // timing
-
-  </script>
+    console.time('fetching data');
+    fetch('https://api.github.com/users/wesbos').then(data => data.json()).then(data => { console.timeEnd('fetching data'); console.log(data) })
+  </script>}
 </body>
+
 </html>
